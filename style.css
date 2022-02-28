@@ -29,11 +29,92 @@ body > *{
     width: 100%;
     max-width: 1100px;
 }
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 /* header */
 header img{
     max-height: 330px;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     object-position: 50% 30%;
+}
+header div{
+    background-color: black;
+    color: white;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 248px;
+    margin: 18px 48px;
+}
+h1{
+    margin: 18px 50px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+/* main */
+/* first sec */
+.gridarea{
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 22px;
+    column-gap: 28px;
+    font-size: 14.25px;
+}
+
+/* second sec */
+.flex_area1{
+    background-color: #e1e1e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex_area1 article{
+    height: 431px;
+    width: 320px;
+    background-color: white;
+    margin: 44px 0;
+}
+.flex_area1 img{
+    height: 244px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* third sec */
+.last{
+    position: relative;
+}
+.last img{
+    height: 431px;
+    width: 100%;
+    object-fit:none;
+    object-position: 0% 50%;
+}
+.last a{
+    position: absolute;
+    top: 192px;
+    left: 351.156px;
+    border: white 2px solid;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+}
+.last p{
+    margin: 13.5px 30px;
 }
