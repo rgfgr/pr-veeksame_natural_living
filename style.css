@@ -25,10 +25,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-body > *{
-    width: 100%;
-    max-width: 1100px;
-}
 *{
     margin: 0;
     padding: 0;
@@ -40,7 +36,7 @@ img{
 
 /* header */
 header img{
-    max-height: 330px;
+    max-height: 20.625rem;
     width: 100%;
     object-fit: cover;
     object-position: 50% 30%;
@@ -48,7 +44,7 @@ header img{
 header div{
     background-color: black;
     color: white;
-    height: 96px;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -57,11 +53,11 @@ header ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 248px;
-    margin: 18px 48px;
+    width: 15.5rem;
+    margin: 1.125rem 3rem;
 }
 h1{
-    margin: 18px 50px;
+    margin: 1.125rem 3.125rem;
 }
 .menu a{
     color: white;
@@ -71,19 +67,19 @@ h1{
 /* main */
 /* first sec */
 .gridarea{
-    margin: 0 50px;
+    margin: 0 3.125rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 22px;
-    column-gap: 28px;
-    font-size: 14.25px;
+    row-gap: 1.375rem;
+    column-gap: 1.75rem;
+    font-size: 0.89rem;
 }
 section{
-    min-height: 282px;
+    min-height: 17.625rem;
 }
 section > h2{
     text-align: center;
-    margin: 30px;
+    margin: 1.875rem;
 }
 
 /* second sec */
@@ -95,13 +91,13 @@ section > h2{
     align-items: center;
 }
 .flex_area1 article{
-    height: 431px;
-    width: 320px;
+    height: 26.875rem;
+    width: 20rem;
     background-color: white;
-    margin: 44px 0;
+    margin: 2.75rem 0;
 }
 .flex_area1 img{
-    height: 244px;
+    height: 15.25rem;
     width: 100%;
     object-fit: cover;
 }
@@ -111,28 +107,28 @@ section > h2{
     position: relative;
 }
 .last img{
-    height: 431px;
+    height: 38.5vw;
     width: 100%;
-    object-fit:none;
+    object-fit: none;
     object-position: 0% 50%;
 }
 .last a{
     position: absolute;
-    top: 192px;
-    left: 351.156px;
+    top: 44.65%;
+    left: calc((100% - 397.703px) / 2);
     border: white 2px solid;
     border-radius: 25px;
     color: white;
     text-decoration: none;
 }
 .last p{
-    margin: 13.5px 30px;
+    margin: 0.84375rem 1.875rem;
 }
 
 /* footer */
 footer{
     background-color: rgb(22, 22, 22);
-    height: 393px;
+    height: 300px;
 }
 footer a, footer p{
     color: rgb(106, 106, 106);
@@ -150,4 +146,9 @@ footer a, footer p{
 .flex_area3 div{
     display: flex;
     flex-direction: column;
+}
+
+/* more stuff */
+header, footer{
+    width: 100%;
 }
